@@ -1,4 +1,4 @@
-# longuinusapp
+# LonguinusApp
 
 - Baixem o Git (https://git-scm.com/)
 - Instalem o Git
