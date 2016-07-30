@@ -13,6 +13,11 @@ class Home extends CI_Controller {
 		$this->load->view('login/login');
 		$this->load->view('footer/footer');
 	}
+
+	public function auth() {
+		var_dump($this->input->post());
+		echo 'entrou no auth';
+	}
 }
 
 /* End of file home.php */

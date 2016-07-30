@@ -15,9 +15,9 @@
         
           <div>
             <h5 class="text-center fw-bold">Email Login</h5>
-            <form action="" method="POST">
-              <input class="text-box form-control" type="email" placeholder="Your Email"> 
-              <input class="text-box form-control"  type="password" placeholder="Your Password">
+            <form action="<?php echo base_url('index.php/user/auth'); ?>" method="POST">
+              <input class="text-box form-control" name="email" type="email" placeholder="Your Email"> 
+              <input class="text-box form-control" name="password" type="password" placeholder="Your Password">
               <button class="btn btn-green btn-block">Sign In</button>
             </form>
           </div>

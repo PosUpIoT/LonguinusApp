@@ -243,3 +243,12 @@
 				
 		</nav>
 		<!-- /Main Navbar -->
+
+		<!-- Content -->
+		<section class="content pad-lg bg-black-3">
+			<?php if(isset($message)){ ?>
+				<div class="alert alert-<?php echo $message['type']; ?> alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<?php echo $message['content']; ?>
+				</div>
+			<?php } ?>
