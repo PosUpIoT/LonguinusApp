@@ -1,6 +1,3 @@
-    <!-- Content -->
-    <section class="content pad-lg bg-black-3">
-    
       <!-- Container -->
       <div class="container">
 
