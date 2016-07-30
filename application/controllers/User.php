@@ -34,7 +34,7 @@ class User extends CI_Controller {
 		$this->user_model->insert_user($data);
 	}
 
-	public function login() {
+	public function auth() {
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
 
@@ -43,6 +43,19 @@ class User extends CI_Controller {
 		var_dump($retorno);
 	}
 
+
+	public function auth_facebook() {
+		// Check if user is logged in
+		if ($this->facebook->is_authenticated()) {
+			// User logged in, get user details
+			$user = $this->facebook->request('get', '/me?fields=id,name,email');
+
+			if (!isset($user['error'])) {
+				$data['user'] = $user;
+				var_dump($data['user']);
+			}
+		}
+	}
 }
 
 /* End of file User.php */

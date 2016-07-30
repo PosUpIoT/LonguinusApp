@@ -21,7 +21,7 @@
           
           <div>
             <h5 class="text-center fw-bold">Social Login</h5>
-            <a class="btn btn-split bg-facebook" href="#">
+            <a class="btn btn-split bg-facebook" href="<?php echo $this->facebook->login_url(); ?>">
               <span class="bg-black-10pc"><i class="fa-facebook"></i></span>
               <span>Sign In With Facebook</span>
             </a>
